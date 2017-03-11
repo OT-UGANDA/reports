@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
-<!-- 2015-12-10T19:41:57 -->
+<!-- 2017-03-11T18:15:10 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Shares" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="Bundle" uuid="de938806-95a0-47e1-a67f-d0883e81c25e">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SOLA_DATAADAPTER.xml"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -27,7 +27,7 @@ FROM opentenure.claim_share sh
      ON p.gender_code = gt.code) 
    ON psh.party_id = p.id) 
  ON sh.id = psh.claim_share_id
-WHERE sh.claim_id = $P{claim_id}]]>
+WHERE sh.claim_id = $P{claim_id} and (sh.status = 'a' or sh.status is null)]]>
 	</queryString>
 	<field name="share_id" class="java.lang.String"/>
 	<field name="nominator" class="java.lang.Integer"/>
@@ -50,7 +50,7 @@ WHERE sh.claim_id = $P{claim_id}]]>
 			<band height="44">
 				<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				<textField pattern="">
-					<reportElement x="2" y="3" width="219" height="18" uuid="2d17547d-1e8c-41b9-8f24-79054aebf340"/>
+					<reportElement x="2" y="3" width="228" height="18" uuid="2d17547d-1e8c-41b9-8f24-79054aebf340"/>
 					<textElement>
 						<font fontName="SansSerif" size="14" isBold="true"/>
 					</textElement>

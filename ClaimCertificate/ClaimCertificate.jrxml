@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
-<!-- 2015-12-15T00:38:34 -->
+<!-- 2017-03-11T18:20:14 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Claim certificate" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" resourceBundle="Bundle" uuid="985fe8fc-59be-4ab1-adfa-106164917efc">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SOLA_DATAADAPTER.xml"/>
-	<property name="ireport.jasperserver.url" value="http://demo.opentenure.org/jasperserver/"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
 	<property name="ireport.jasperserver.user" value="jasperadmin"/>
-	<property name="ireport.jasperserver.report.resource" value="/reports/demo/cert/Claim_certificate_files/main_jrxml"/>
-	<property name="ireport.jasperserver.reportUnit" value="/reports/demo/cert/Claim_certificate"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/cert/Claim_certificate_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/cert/Claim_certificate"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
@@ -116,7 +116,7 @@ WHERE c.id = $P{id}]]>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<imageExpression><![CDATA["C:/Users/solovov/JaspersoftWorkspace/MyReports/ClaimCertificate/logo.png"]]></imageExpression>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
 			</image>
 			<textField>
 				<reportElement x="150" y="50" width="410" height="34" uuid="ab91210b-8387-471b-aef0-1115c96fb336"/>
